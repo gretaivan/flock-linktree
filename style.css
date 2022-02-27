@@ -1,0 +1,68 @@
+@font-face {
+  font-family: Neon;
+  src: URL('../neon_80s/Neon.ttf') format('truetype');
+} 
+/* Import fonts on html */
+
+:root{
+  --background: black;
+  --primary: white;
+  --fonts: Neon;
+  --highlight: #FE018A;
+}
+
+
+html {
+  box-sizing: border-box;
+  margin: 0;
+  background-color: var(--background);
+}
+
+body {
+  font-family: Neon;
+  font-size: 1.3rem;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+}
+
+h1 {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  /* check what is flex vertical alignment */
+  align-content: stretch;
+  margin: 30px;
+}
+
+img {
+  margin: 30px 0;
+  width: 40%;
+}
+
+a {
+  max-width: 350px;
+  padding: 20px;
+  /* remove once vertical flex is fixed */
+  margin: 15px 0;
+  text-align: center;
+  text-decoration: none;
+  color: var(--primary);
+
+  border: 2px var(--primary) solid;
+  border-radius: 15px;
+}
+
+a:active {
+  background-color: var(--highlight);
+}
+
+
+
+
