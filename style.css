@@ -62,7 +62,7 @@ a {
   border-radius: 15px; */
 }
 
-a:active {
+a:active, a:hover {
   background-color: var(--highlight);
 }
 
